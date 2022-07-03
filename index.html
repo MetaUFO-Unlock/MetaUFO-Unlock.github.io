@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>MetaUFO Unlock</title>
+      <meta name="description" content="MetaUFO Unlock">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <!-- STYLES -->
+      <link rel="stylesheet" href="./assets/bootstrap.min.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./assets/all.min.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./assets/themify-icons.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./assets/style.css?v=1" type="text/css" media="all">
+      <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+   </head>
+   <body>
+      <div id="bg"></div>
+      <!-- main layout -->
+      <div class="content">
+         <!-- section Presale -->
+         <section id="presale" class="animated-sectio1n section-visible">
+            <div class="section-inner" data-simplebar="init">
+                  
+             <div class="spacer" data-height="50" style="height: 50px;"></div>
+             <div class="row">
+                <div class="col-md-12">
+                   <!-- price item -->
+                   <div class="price-item  bg-white rounded">
+                   	<a href="javascript:connect();" class="title-badge" id="connect-wallet"><i class="ti-link"></i>Connect Wallet</a>
+                      <img style="display: block; margin-left: auto; margin-right: auto;height: 50px;width: auto" src="./assets/ufologo.png">
+                      <h3 class="plan center-text">Unlock will end in</h3>
+                      <h1 class="countdowm" id="demo">0d 0h 0m 0s </h1>
+                      <h4 style="margin-top: 30px;margin-bottom: 5px;">Enter Unlock Amount(BUSD/USDT)</h4>
+                      <div class="flex-sb unlock-input" style="font-size: 14px; color: inherit;">
+						   <input class="input unlock-amount" onkeyup="showUnlockAmount()" type="text" maxlength="16" value="0.0000" style="color: inherit; height: 30px; line-height: 26px; background-color: inherit; width: 100%;">
+						   <span class="right">
+						      <span>
+						         <select class="round white fs16 unlock-method" onchange="changeButtonColor()">
+						            <option value="busd" selected>&nbsp;BUSD</option>
+						            <option value="usdt">&nbsp;USDT</option>
+						         </select>
+						      </span>
+						   </span>
+						</div>
+                  <p class="width90 fs16" style="margin-top: 5px;width: 100%">
+                     <span style="float: right;">≈  Unlock <span class="expect-unlock" style="color:#e4461e ;">0</span> MetaUFO</span>
+              		</p>
+                     <div class="unlock-btn">
+                      <button onclick="enableUnlock();" class="btn btn-default btn-full btn1">Enable</button>
+                      <button onclick="unlock();" class="btn btn-default btn-full btn2">Unlock</button>
+                     </div>
+                      <ul>
+                         <li><i class="ti-unlock"></i>You total Unlocked: <span class="total-unlocked" style="color:#e4461e ;">0</span> MetaUFO</li>
+                         <li><i class="ti-lock"></i>You Locked: <span class="ufo-locked" style="color:#e4461e ;">0</span> MetaUFO</li>
+                         <li><hr/></li>
+                         <li><i class="ti-info-alt"> Note: MetaUFO will be open for trading on August 1, 2022 at 10:00 (UTC time)</i></li>
+                      </ul>
+                      <div class="spacer" data-height="45" style="height: 45px;"></div>
+                   </div>
+                   <div class="spacer d-md-none d-lg-none" data-height="30" style="height: 30px;"></div>
+                </div>
+             </div>
+             </div>
+         </section>
+      </div>
+      <!-- JAVA SCRIPTS -->
+      <script src="./assets/jquery.min.js"></script>
+      <script src="./assets/web3.js"></script>
+      <script src="./assets/app.js?v=5"></script>
+      <script src="./assets/bootstrap.min.js"></script>
+      <script src="./assets/custom.js?v=4"></script>
+      <script src="./assets/timer.js?v=1"></script>
+      <script src="./assets/sweetalert2@11.js"></script>
+      <script src='./assets/bignumber.min.js'></script>
+      <script type="text/javascript">
+          if (window.location.href.indexOf("vv") == -1) {
+            window.location.href = 'https://metaufounlock.com?vv=1';
+            }
+      </script>
+   </body>
+</html>
