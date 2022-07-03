@@ -1,2 +1,2 @@
 # MetaUFO-Unlock.github.io
-metaufo unlock page
+metaufo un-lock page
